@@ -1,33 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --newjeans-blue: #a0e7e5;
+  --newjeans-pink: #ffa8b6;
+  --newjeans-yellow: #ffeb99;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.retro-shadow {
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.newjeans-gradient {
+  background: linear-gradient(
+    45deg,
+    var(--newjeans-blue),
+    var(--newjeans-pink),
+    var(--newjeans-yellow)
+  );
 }

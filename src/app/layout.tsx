@@ -1,3 +1,5 @@
+import Footer from "@/componets/Footer";
+import Header from "@/componets/Header";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -16,7 +18,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <title>NewJeans 팬사이트</title>
+      <meta name="description" content="뉴진스 팬사이트" />
+      <link rel="icon" href="/favicon.ico" />
+      <body className={inter.className}>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }

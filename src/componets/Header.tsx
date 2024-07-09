@@ -1,42 +1,22 @@
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-purple-600 text-white">
-      <nav className="container mx-auto px-4 py-4">
-        <ul className="flex space-x-4">
-          <li>
-            <Link href="/" className="hover:text-yellow-300">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/news" className="hover:text-yellow-300">
-              News
-            </Link>
-          </li>
-          <li>
-            <Link href="/videos" className="hover:text-yellow-300">
-              Videos
-            </Link>
-          </li>
-          <li>
-            <Link href="/community" className="hover:text-yellow-300">
-              Community
-            </Link>
-          </li>
-          <li>
-            <Link href="/events" className="hover:text-yellow-300">
-              Events
-            </Link>
-          </li>
-          <li>
-            <Link href="/members" className="hover:text-yellow-300">
-              Members
-            </Link>
-          </li>
-        </ul>
+    <header className="text-white">
+      <nav className="py-4 px-8 flex justify-between items-center bg-pink">
+        <Link className="mx-2 text-white" href="/">
+          홈
+        </Link>
+        <Link className="mx-2 text-white" href="/sns">
+          SNS 모아보기
+        </Link>
+        <Link className="mx-2 text-white" href="/youtuber">
+          유튜버 리스트
+        </Link>
+        <Link className="mx-2 text-white" href="/schedule">
+          일정 리스트
+        </Link>
       </nav>
     </header>
   );

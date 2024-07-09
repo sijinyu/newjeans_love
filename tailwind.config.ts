@@ -9,8 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "newjeans-blue": "#007bff",
-        "newjeans-pink": "#ff69b4",
+        pink: "#FF69B4",
+        mint: "#98FF98",
+        yellow: "#FFFF99",
+        lightPurple: "#E6E6FA",
+        darkText: "#333333",
+        whiteText: "#FFFFFF",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

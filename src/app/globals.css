@@ -1,30 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --newjeans-blue: #a0e7e5;
-  --newjeans-pink: #ffa8b6;
-  --newjeans-yellow: #ffeb99;
-}
-
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #333333;
 }
 
-.retro-shadow {
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+header {
+  background-color: #ff69b4;
+  color: #ffffff;
 }
 
-.newjeans-gradient {
-  background: linear-gradient(
-    45deg,
-    var(--newjeans-blue),
-    var(--newjeans-pink),
-    var(--newjeans-yellow)
-  );
+footer {
+  background-color: #98ff98;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff69b4;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+.bg-pink {
+  background-color: #ff69b4;
+}
+
+.bg-mint {
+  background-color: #98ff98;
+}
+
+.bg-yellow {
+  background-color: #ffff99;
+}
+
+.bg-lightPurple {
+  background-color: #e6e6fa;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-mint {
+  color: #98ff98;
+}
+
+.text-pink {
+  color: #ff69b4;
+}
+
+.text-lightPurple {
+  color: #e6e6fa;
 }
